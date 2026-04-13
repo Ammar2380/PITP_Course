@@ -1,0 +1,102 @@
+
+# class Contact:
+#     def __init__(self, name, phone, email):
+#         self.name = name
+#         self.phone = phone
+#         self.email = email
+
+#     def __str__(self):
+#         return f"Name: {self.name}, Phone: {self.phone}, Email: {self.email}"
+
+
+# contacts = []
+
+
+
+# def show_menu():
+#     print("\n Contact Management System 2")
+#     print("1. Add Contact")
+#     print("2. View Contacts")
+#     print("3. Update Contact")
+#     print("4. Delete Contact")
+#     print("5. Exit")
+
+
+# def add_contact():
+#     print("\nAdd New Contact")
+#     name = input("Enter name: ")
+#     phone = input("Enter phone: ")
+#     email = input("Enter email: ")
+
+#     new_contact = Contact(name, phone, email)
+#     contacts.append(new_contact)
+
+#     print("Contact added successfully!")
+
+
+# def view_contacts():
+#     print("\nAll Contacts:")
+#     if len(contacts) == 0:
+#         print("No contacts available.")
+#     else:
+#         for i in range(len(contacts)):
+#             print(f"{i}. {contacts[i]}")
+
+
+# def update_contact():
+#     view_contacts()
+    
+#     if len(contacts) == 0:
+#         return
+
+#     index = int(input("Enter index of contact to update: "))
+
+#     if index >= 0 and index < len(contacts):
+#         print("Enter new details:")
+
+#         name = input("Enter new name: ")
+#         phone = input("Enter new phone: ")
+#         email = input("Enter new email: ")
+
+#         contacts[index].name = name
+#         contacts[index].phone = phone
+#         contacts[index].email = email
+
+#         print("Contact updated successfully!")
+#     else:
+#         print("Invalid index!")
+
+
+# def delete_contact():
+#     view_contacts()
+
+#     if len(contacts) == 0:
+#         return
+
+#     index = int(input("Enter index of contact to delete: "))
+
+#     if index >= 0 and index < len(contacts):
+#         contacts.pop(index)
+#         print("Contact deleted successfully!")
+#     else:
+#         print("Invalid index!")
+
+
+# while True:
+#     show_menu()
+#     choice = input("Enter your choice: ")  
+
+#     if choice == "1":
+#         add_contact()
+#     elif choice == "2":
+#         view_contacts()
+#     elif choice == "3":
+#         update_contact()
+#     elif choice == "4":
+#         delete_contact()
+#     elif choice == "5":
+#         print("Exiting program...")
+#         break
+#     else:
+#         print("Invalid choice! Try again.")
+
