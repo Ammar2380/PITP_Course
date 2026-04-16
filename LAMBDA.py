@@ -10,24 +10,24 @@
 
 # # # decorator 
 b = input("enter your pass: ")
+pas = "sds"
+if b == pas:
+    def deco(a):
+        def deco1():
+        
+                print("welcome to the colgate company")
+                a()
+                print("made by me")
+        
+        return deco1   
 
-def deco(a):
-    def deco1():
-        pas = "sds"
-        if b == pas:
-            print("welcome to the colgate company")
-            a()
-            print("made by me")
-        else:
-            print("Wrong password")
-    
-    return deco1   
+    @deco
+    def abc():
+        print("data science")
 
-@deco
-def abc():
-    print("data science")
-
-abc()
+    abc()
+else:
+    print("Wrong password")
 
 # # a=lambda x,y:x%2==0 and or
 # # b=2
