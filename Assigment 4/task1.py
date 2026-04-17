@@ -12,7 +12,6 @@ password = input("Create your password: ")
 users[username] = password
 print("\nAccount created successfully!\n")
 
-# Login system
 login_user = input("Enter your username to login: ")
 login_pass = input("Enter your password: ")
 
